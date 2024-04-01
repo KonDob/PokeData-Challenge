@@ -75,3 +75,5 @@ pokemon_db_name = 'pokemon.db'
 
 with PokemonDatabase(pokemon_db_name) as db:
     db.create_table()
+    db.average_bmi()
+    db.max_bmi()

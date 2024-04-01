@@ -23,10 +23,13 @@ Repo is public.
    
 3) Task 3: Data Loading
     I implement loading data into the table as the step of pipeline in data_transformation.py file.
+   To get result run 'python data_extracting_new.py' in console.
    For that I created separate file db_operations.py for better code design. And decided
    to create a DB there.
     
-
+3) Task 4: Extra Feature - Advanced Data Processing
+    To see the average and max BMI run command 'python db_operations.py'
+    
 
 ## Ideas to improve
 
@@ -34,7 +37,8 @@ Data extracting : it`s better to use JSON. But I"d faced with some  unclear
 issue with readFromJson method in apache_beam package. 
 There is few more ways to print the tranformed data from Task 2. I choose to print
 items in the pipeline such like : using DB query(SELECT * ...) etc.
-Also DB creation can be in other place. 
+Also DB operations can be in other place, not together with DB classes.
+
 
 
 ## About
