@@ -21,7 +21,10 @@ Repo is public.
 2) Task 2: Data Transformation with Apache Beam.
     To see result of this task run in the console : python data_transformation.py.
    
-3) 
+3) Task 3: Data Loading
+    I implement loading data into the table as the step of pipeline in data_transformation.py file.
+   For that I created separate file db_operations.py for better code design. And decided
+   to create a DB there.
     
 
 
@@ -31,6 +34,7 @@ Data extracting : it`s better to use JSON. But I"d faced with some  unclear
 issue with readFromJson method in apache_beam package. 
 There is few more ways to print the tranformed data from Task 2. I choose to print
 items in the pipeline such like : using DB query(SELECT * ...) etc.
+Also DB creation can be in other place. 
 
 
 ## About

@@ -1,6 +1,6 @@
 import apache_beam as beam
 import pandas as pd
-from db_operations_new import PokemonDatabase
+from db_operations import PokemonDatabase
 import logging
 
 # Logger configuration
@@ -28,7 +28,6 @@ def format_csv(row):
 def load_data(row):
     # Init DB connection
     database_name = 'pokemon.db'
-    db = PokemonDatabase(database_name)
     # Apply the function of loading data into the table to each element of the PCollection
     with PokemonDatabase(database_name) as db:
         db.load_data_into_table([row])
