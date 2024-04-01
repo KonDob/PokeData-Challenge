@@ -18,7 +18,10 @@ Repo is public.
     To run in - run command 'python data_extracting_new.py' in console.
     It will create a file pokemon.csv with required data and print items.
    
-2) Task 2: Data Transformation with Apache Beam
+2) Task 2: Data Transformation with Apache Beam.
+    To see result of this task run in the console : python data_transformation.py.
+   
+3) 
     
 
 
@@ -26,7 +29,8 @@ Repo is public.
 
 Data extracting : it`s better to use JSON. But I"d faced with some  unclear
 issue with readFromJson method in apache_beam package. 
-
+There is few more ways to print the tranformed data from Task 2. I choose to print
+items in the pipeline such like : using DB query(SELECT * ...) etc.
 
 
 ## About
